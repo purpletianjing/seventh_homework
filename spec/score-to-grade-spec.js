@@ -7,5 +7,7 @@ describe("score-to-grade-spec",function() {
     expect(scoreToGrade(-8)).toBe('error');
   });
 
-  
+  it("if the score is 100,the grade will be S",function() {
+    expect(scoreToGrade(100)).toBe('S');
+  })
 });
