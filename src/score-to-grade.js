@@ -4,6 +4,8 @@ function scoreToGrade(score) {
     grade = "error";
   }else if (score >= 90) {
     grade = "S";
+  }else if (score >= 80) {
+    grade = "A";
   }
   return grade;
 }
