@@ -42,4 +42,8 @@ describe("score-to-grade-spec",function() {
   it("if score is 60,the grade will be C",function() {
     expect(scoreToGrade(60)).toBe('C');
   });
+
+  it("if score is smaller than 60,the grade will be D",function() {
+    expect(scoreToGrade(43)).toBe('D');
+  })
 });
