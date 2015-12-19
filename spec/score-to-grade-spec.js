@@ -14,4 +14,9 @@ describe("score-to-grade-spec",function() {
   it("if the score is larger than 90, the grade will be S",function() {
     expect(scoreToGrade(98)).toBe('S');
   });
+
+  it("if the score is 90,the grade will be S",function(){
+    expect(scoreToGrade(90)).toBe('S');
+  });
+
 });
