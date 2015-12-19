@@ -19,4 +19,9 @@ describe("score-to-grade-spec",function() {
     expect(scoreToGrade(90)).toBe('S');
   });
 
+  it("if the score is larger than 80,the grade will be A",function(){
+    expect(scoreToGrade(87)).toBe('A');
+  });
+
+  
 });
