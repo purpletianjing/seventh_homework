@@ -10,6 +10,8 @@ function scoreToGrade(score) {
     grade = "B";
   } else if (score >= 60) {
     grade = "C";
+  } else {
+    grade = 'D';
   }
   return grade;
 }
