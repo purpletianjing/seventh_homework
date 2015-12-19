@@ -23,5 +23,8 @@ describe("score-to-grade-spec",function() {
     expect(scoreToGrade(87)).toBe('A');
   });
 
-  
+  it("if the score is 80,the grade will be A",function() {
+    expect(scoreToGrade(80)).toBe('A');
+  })
+
 });
