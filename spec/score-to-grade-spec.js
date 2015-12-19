@@ -1,10 +1,10 @@
 describe("score-to-grade-spec",function() {
   it("If the score is larger than 100,the grade will be error",function(){
-    expect(scoreToGrade(102)).toBe('Input is over the range');
+    expect(scoreToGrade(102)).toBe('Input is over the range(0 - 100)');
   });
 
   it("If the score is smaller than 0,the grade will be error",function() {
-    expect(scoreToGrade(-8)).toBe('Input is over the range');
+    expect(scoreToGrade(-8)).toBe('Input is over the range(0 - 100)');
   });
 
   it("if the score is 100,the grade will be S",function() {
@@ -45,5 +45,11 @@ describe("score-to-grade-spec",function() {
 
   it("if score is smaller than 60,the grade will be D",function() {
     expect(scoreToGrade(43)).toBe('D');
-  })
+  });
+
+  it("if score isn't Integer,it will throw error",function() {
+    expect(function() {
+      scoreToGrade('ds');
+    }).toThrowError(TypeError);
+  });
 });
