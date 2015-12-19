@@ -10,4 +10,8 @@ describe("score-to-grade-spec",function() {
   it("if the score is 100,the grade will be S",function() {
     expect(scoreToGrade(100)).toBe('S');
   });
+
+  it("if the score is larger than 90, the grade will be S",function() {
+    expect(scoreToGrade(98)).toBe('S');
+  });
 });
